@@ -1,0 +1,24 @@
+<div>
+    <form action="/user/login" method="POST">
+        <div style="color: red;">
+                {{message}}
+            </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input name="email" placeholder="enter email" value="{{user.email}}">
+            <div style="color: red;">
+                {{user.emailError}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input name="password" placeholder="create password" value="{{user.password}}">
+            <div style="color: red;">
+                {{user.passwordError}}
+            </div>
+        </div>
+        <div>
+            <button class="button" type="submit"><i class="fa fa-send"></i> Login</button>
+        </div>
+    </form>
+</div>

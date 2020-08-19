@@ -1,5 +1,5 @@
 <div>
-    <table>
+    <table class="table">
         <tr>
             <th>Name</th>
             <th>Price</th>
@@ -11,9 +11,9 @@
             <tr>
                 <td>{{this.name}}</td>
                 <td>{{this.price}}</td>
-                <td><a href="/product/viewProduct/{{this.id}}"><i class="fa fas-eye"></i>view</a></td>
-                <td><a href="/product/updateProduct/{{this.id}}"><i class="fa fas-pencil"></i>edit</a></td>
-                <td><a href="/product/deleteProduct/{{this.id}}"><i class="fa fas-trash"></i>delete</a></td>
+                <td><a href="/product/viewProduct/{{this.id}}"><i class="fa fa-eye"></i> view</a></td>
+                <td><a href="/product/updateProduct/{{this.id}}"><i class="fa fa-pencil"></i> edit</a></td>
+                <td><a href="/product/deleteProduct/{{this.id}}"><i class="fa fa-trash"></i> delete</a></td>
             </tr>
         {{/each}}
     </table>

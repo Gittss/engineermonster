@@ -1,0 +1,54 @@
+body,html{
+    height: 100%;
+    z-index: -1;
+}
+.Body{
+    text-align: center;
+    background-color: teal;
+    padding: 5%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.Body a{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(1, 1, 87);
+    color: yellow;
+}
+.Body a:hover{
+    color: yellowgreen;
+    text-decoration: none;
+}
+.navv{
+    position: relative;
+    background-color: black;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
+    color: rgb(207, 221, 12);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    z-index: 1;
+}
+.form{
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.726);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.button{
+    border-radius: 5px;
+    border: 0.4px solid #ccc;
+    background-color: rgb(8, 182, 8);
+    color: white;
+    padding: 7px 20px;
+    box-shadow: 4px 8px 3px #4e4d4d93;
+}
+.button:active{
+    transform: translateY(5px);
+    box-shadow: 4px 8px 3px #36363693;
+}
+.button:hover{
+    background-color: rgb(11, 228, 11);
+}
+footer{
+    bottom: 0;
+}

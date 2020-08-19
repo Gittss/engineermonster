@@ -17,8 +17,8 @@ app.set('views',path.join(__dirname,'/views/'));
 app.engine('hbs',exphand({extname:'hbs', defaultLayout:'mainlayout', layoutsDir:__dirname + '/views/layouts/' }));
 app.set('view engine', 'hbs');
 
-// app.use(express.static('public'))
-// app.use('/',express.static(__dirname+'/public'));
+app.use(express.static('public'))
+app.use('/',express.static(__dirname+'/public'));
 
 mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true, useUnifiedTopology:true},(err)=>{
     if(!err) console.log('MongoDB connected')

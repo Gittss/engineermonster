@@ -1,0 +1,26 @@
+<div>
+    {{message}}
+    <form action="/product/updateProduct/{{product.id}}" method="POST">
+        <div class="form-group">
+            <label>Name</label>
+            <input name="name" placeholder="enter name" value="{{product.name}}">
+            <div style="color: red;">
+                {{product.nameError}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input name="price" placeholder="enter price" value="{{product.price}}">
+            <div style="color: red;">
+                {{product.priceError}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input name="description" placeholder="describe the product" value="{{product.description}}">
+        </div>
+        <div>
+            <button class="button" type="submit"><i class="fa fa-send"></i> Send</button>
+        </div>
+    </form>
+</div>

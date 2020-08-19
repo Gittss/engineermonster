@@ -1,9 +1,7 @@
 const express = require('express')
-const mongoose = require('mongoose')
 var router = express.Router()
 const User = require('../models/user')
 const util = require('../utility/commonFunctions')
-const e = require('express')
 
 router.use(express.json())
 
@@ -34,7 +32,6 @@ router.get('/login',(req,res)=>{
 });
 
 router.post('/login',(req,res)=>{
-    console.log(req.body.email)
     User.findOne({email:req.body.email},(err,user)=>{
         if(!err){
             if(!user){

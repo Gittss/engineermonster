@@ -18,3 +18,5 @@ function handleValidationError(err,body){
         }
     }
 }
+
+module.exports = handleValidationError

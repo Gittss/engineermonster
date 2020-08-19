@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>View Product</th>
+            <th>Update Product</th>
+            <th>Delete Product</th>
+        </tr>
+        {{#each product}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.price}}</td>
+                <td><a href="/product/viewProduct/{{this.id}}"><i class="fa fas-eye"></i>view</a></td>
+                <td><a href="/product/updateProduct/{{this.id}}"><i class="fa fas-pencil"></i>edit</a></td>
+                <td><a href="/product/deleteProduct/{{this.id}}"><i class="fa fas-trash"></i>delete</a></td>
+            </tr>
+        {{/each}}
+    </table>
+</div>

@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const bodyparser = require('body-parser')
 const exphand = require('express-handlebars')
 const userController = require('./controller/user')
+const productController = require('./controller/product')
 require('dotenv/config')
 
 var app=express()
@@ -33,3 +34,4 @@ app.get('/',(req,res)=>{
 });
 
 app.use('/user',userController)
+app.use('/product',productController)
